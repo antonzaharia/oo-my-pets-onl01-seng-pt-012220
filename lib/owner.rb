@@ -37,7 +37,10 @@ class Owner
   end
   
   def buy_cat(cat)
-   cats << 
+   cat_to_buy = Cat.find_cat_by_name(cat)
+   if !cat_to_buy.included?(cats)
+     cats << cat_to_buy
+   end
   end
   
 end
