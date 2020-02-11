@@ -66,6 +66,11 @@ class Owner
       cat.owner = nil
     end
   end
+  
+  def list_pets
+    puts "I have #{self.dogs.count} dog(s), and #{Cats.count} cat(s)."
+  end
+  
 end
 
 
