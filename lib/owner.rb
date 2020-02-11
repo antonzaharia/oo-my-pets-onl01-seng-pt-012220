@@ -37,7 +37,8 @@ class Owner
   end
   
   def buy_cat(cat)
-    
+    if !cat.included?(cats)
+      
   end
   
 end
