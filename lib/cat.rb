@@ -18,8 +18,5 @@ class Cat
   def self.all
     @@all
   end
-  
-  def find_cat_by_name(name)
-    @@all.select { |cat| cat.name == name}
-  end
+
 end
