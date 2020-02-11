@@ -42,8 +42,8 @@ class Owner
 
     cat_to_buy = Cat.all.select { |cat| cat.name == cat}
 
-   if !cat_to_buy.included?(cats)
-     cats << cat_to_buy
+   if cat_to_buy.included?(cats)
+     puts "buuuuuuuuuuun"
    end
   end
   
