@@ -43,6 +43,12 @@ class Owner
   def buy_dog(dog)
     dogs << Dog.new(dog,self)
   end
+  
+  def walk_dogs
+    dogs.each do |dog|
+      dog.mood = "happy"
+    end
+  end
 end
 
 
