@@ -37,7 +37,11 @@ class Owner
   end
   
   def buy_cat(cat)
-   cat_to_buy = Cat.find_cat_by_name(cat)
+    
+      
+
+    cat_to_buy = Cat.all.select { |cat| cat.name == cat}
+
    if !cat_to_buy.included?(cats)
      cats << cat_to_buy
    end
