@@ -39,6 +39,10 @@ class Owner
   def buy_cat(cat)
     cats << Cat.new(cat,self)
   end
+  
+  def buy_dog(dog)
+    dogs << DOG.new(cat,self)
+  end
 end
 
 
