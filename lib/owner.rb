@@ -37,16 +37,9 @@ class Owner
   end
   
   def buy_cat(cat)
-    
-      
-
-    cat_to_buy = Cat.all.select { |cat| cat.name == cat}
-
-   if cat_to_buy.include?(cats)
-     cats << cat_to_buy
-   end
+   Cat.all.select { |cat| cat.name == cat}
+  cats << cat
   end
-  
 end
 
 
