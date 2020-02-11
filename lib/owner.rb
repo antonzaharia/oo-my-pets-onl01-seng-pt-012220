@@ -42,7 +42,7 @@ class Owner
 
     cat_to_buy = Cat.all.select { |cat| cat.name == cat}
 
-   if !cat_to_buy.include?(cats)
+   if cat_to_buy.include?(cats)
      cats << cat_to_buy
    end
   end
