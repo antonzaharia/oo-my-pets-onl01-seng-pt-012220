@@ -38,7 +38,6 @@ class Owner
   
   def buy_cat(cat)
    cats << Cat.cat
-    end
   end
   
 end
